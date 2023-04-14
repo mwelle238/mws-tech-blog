@@ -5,11 +5,11 @@
   </div>
 </div>
 
-<div class="row mt-4">
+<div class="row mt-4 article-list">
   <div class="col-md-6 text-white">
-    <h3>Create a New Post:</h3>
-
-    <form class="form new-article-form">
+    <button class="btn btn-primary new-article-btn" data-btn="new">NEW POST</button>
+    <form class="form new-article-form display-none">
+      <h3>Create a New Post:</h3>
       <div class="form-group">
         <label for="article-title">Title:</label>
         <input class="form-input" type="text" id="article-title" name="article-title" />
@@ -19,13 +19,14 @@
         <textarea class="form-input" id="article-body" name="article-body"></textarea>
       </div>
       <div class="form-group">
-        <button type="submit" class="btn btn-primary">Create</button>
+        <button class="btn btn-primary" data-btn="submit">Submit</button>
+        <button class="btn btn-primary" data-btn="cancel">Cancel</button>
       </div>
     </form>
   </div>
 
 
-  <div class="col-md-6 text-black article-list">
+  <div class="col-md-6 text-black">
   {{#if articles.length}}
       <h3>Previous Posts:</h3>
     {{#each articles as |article|}}
