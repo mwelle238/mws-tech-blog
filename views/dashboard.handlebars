@@ -24,10 +24,10 @@
     </form>
   </div>
 
-  {{#if articles.length}}
-  <div class="col-md-6 text-black">
-    <h3>Previous Posts:</h3>
 
+  <div class="col-md-6 text-black article-list">
+  {{#if articles.length}}
+      <h3>Previous Posts:</h3>
     {{#each articles as |article|}}
     <div class="row mb-2">
       <div class="col-md-8">
@@ -38,8 +38,8 @@
       </div>
     </div>
     {{/each}}
-  </div>
   {{/if}}
+  </div>
 </div>
 
 <script src="./js/dashboard.js"></script>

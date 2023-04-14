@@ -16,7 +16,7 @@ Comment.init(
       allowNull: false,
       defaultValue: DataTypes.NOW,
     },
-    author: {
+    author_id: {
       type: DataTypes.INTEGER,
       allowNull: false,
       references: {
@@ -42,7 +42,7 @@ Comment.init(
     timestamps: false,
     freezeTableName: true,
     underscored: true,
-    modelName: 'article',
+    modelName: 'comment',
   }
 );
 
