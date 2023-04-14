@@ -53,3 +53,11 @@ Deployed Link: [Deployed Link](https://mws-tech-blog.herokuapp.com/)
 
 ## Screenshots
 
+![Open Page](https://github.com/mwelle238/mws-tech-blog/blob/main/screenshots/image1.JPG)
+![Login](https://github.com/mwelle238/mws-tech-blog/blob/main/screenshots/image2.JPG)
+![Dashboard](https://github.com/mwelle238/mws-tech-blog/blob/main/screenshots/image3.JPG)
+![Blog Post](https://github.com/mwelle238/mws-tech-blog/blob/main/screenshots/image4.JPG)
+![Post With Comment](https://github.com/mwelle238/mws-tech-blog/blob/main/screenshots/image5.JPG)
+![Post With Empty Comment](https://github.com/mwelle238/mws-tech-blog/blob/main/screenshots/image6.JPG)
+![New Blog Post](https://github.com/mwelle238/mws-tech-blog/blob/main/screenshots/image7.JPG)
+![Delete 2nd post](https://github.com/mwelle238/mws-tech-blog/blob/main/screenshots/image8.JPG)
