@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MWs Tech Blog</title>
+  <link rel="stylesheet" href="/css/jass.css">
+  <link rel="stylesheet" href="/css/style.css">
+
+</head>
+
+<body class="bg-info text-dark">
+    <header class="align-left p-2 bg-dark text-light">
+      <nav class="row">
+        <a href="/" class="m-2">Home</a>
+        <a href="/" class="m-2">Dashboard</a>
+        <!-- Conditionally render login or logout links -->
+        {{#if logged_in}}
+        <button class="no-button" id="logout">logout</button>
+        {{else}}
+        <a href="/login" class="m-2">Login</a>
+        <a href="/signup" class="m-2">Sign Up</a>
+        {{/if}}
+      </nav><br>
+      <div class="flex-row justify-start card card-rounded p-2 pl-4 bg-light text-dark col-4" style="min-width: 300px">
+        <h1>
+          The Tech Blog
+        </h1>
+      </div>
+    </header>
+    <main class="container container-fluid mt-5 ">
+      <!-- Render the sub layout -->
+      {{{ body }}}
+    </main>
+    <footer>
+      
+    </footer>
+
+  <!-- Render script for logged in users only -->
+  {{#if logged_in}}
+  <script src="/js/logout.js"></script>
+  {{/if}}
+</body>
+
+</html>

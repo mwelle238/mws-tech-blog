@@ -1,0 +1,16 @@
+<!-- Loop over each object in the projects array -->
+{{#each articles as |article| }}
+<a href="/article/{{article.id}}">
+  <div class="row mb-4 display-flex justify-space-between align-center">
+    <div class="card card-rounded w-100">
+      <div class="card-header display-flex justify-space-between align-end p-2 bg-dark text-light">
+        <h2 class="text-link">{{article.title}}</h2>
+        <h6>Posted by {{article.author}} on {{format_date article.date_created}}</h6>
+      </div>
+      <div class="card-body bg-light text-dark">
+        <p>{{article.description}}</p>
+      </div>
+    </div>
+  </div>
+</a>
+{{/each}}
